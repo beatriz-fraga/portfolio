@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="source/styles/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-css3"></ion-icon>
+                        </span>
+                        <span class="title"><strong>Okaneko</strong></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ferramentas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Main Div -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- Search -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- UserImg -->
+                <div class="user">
+                    <img src="./source/images/user.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Visualizações Diárias</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Vendas</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Comentários</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Ganhos</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data List -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Pedidos Recentes</h2>
+                        <a href="#" class="btn">Vizualizar Todos</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Preço</td>
+                                <td>Pagamento</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Geladeira Estrella</td>
+                                <td>R$ 2.999,90</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ar Condicionado Venta+</td>
+                                <td>R$ 420,00</td>
+                                <td>Vencido</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Bluetooth JBL</td>
+                                <td>R$ 200,00</td>
+                                <td>Pago</td>
+                                <td><span class="status return">Retornado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Notebook HP</td>
+                                <td>R$ 2500,00</td>
+                                <td>Vencido</td>
+                                <td><span class="status inprogress">Em Progresso</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch SE</td>
+                                <td>R$ 2800,00</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ventilador Mondial</td>
+                                <td>R$ 300,00</td>
+                                <td>Pago</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Tênis Adidas 41</td>
+                                <td>R$ 400,00</td>
+                                <td>Pago</td>
+                                <td><span class="status return">Retornado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Camisa Jeans G Wow Jeans</td>
+                                <td>R$ 75,00</td>
+                                <td>Vencido</td>
+                                <td><span class="status inprogress">Em progresso</span></td>    
+                            </tr>
+                            <tr>
+                                <td>Tênis Nike 42</td>
+                                <td>R$ 499,00</td>
+                                <td>Pago</td>
+                                <td><span class="status pending">Pendente</span></td>    
+                            </tr>
+                            <tr>
+                                <td>Ventilador Brittania</td>
+                                <td>R$ 298,90</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregue</span></td>    
+                            </tr>
+                            <tr>
+                                <td>Calça Jeans Preta 46 Wow Jeans</td>
+                                <td>R$ 80,00</td>
+                                <td>Vencido</td>
+                                <td><span class="status inprogress">Em progresso</span></td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- New Costumers -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Clientes Recentes</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img1.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Davi F. Ribeiro</br><span>MG</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img2.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Ricardo Belfort</br><span>GO</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img3.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Larissa Fernandes dos Santos</br><span>SP</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img4.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Anna Clara Cristovão</br><span>RJ</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img5.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Felipe D. S. Lima</br><span>SP</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img6.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Rodrigo Y. Fujiwara</br><span>MT</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img7.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Beatriz M. Fraga</br><span>SP</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img8.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Fernando Oliverira dos Anjos</br><span>BA</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx">
+                                    <img src="./source/images/img9.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <h4>Verônica A. Haiyashi</br><span>PR</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // MenuToggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+
+        // Add hovered class in selected list itens 
+        let list = document.querySelectorAll('.navigation li');
+
+        function activeLink() {
+            list.forEach((item) => item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+
+        list.forEach((item) => item.addEventListener('mouseover', activeLink));
+
+    </script>
+</body>
+
+</html>

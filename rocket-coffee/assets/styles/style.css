@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family: "Manrope", sans-serif;
+  --background: #000;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+body {
+  max-height: 100vh;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.blur1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/blur-2.png);
+  background-repeat: no-repeat;
+  background-position: top -50vh right 0;
+  background-size: 120vh;
+  z-index: -1;
+}
+
+.blur2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/blur-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left -20vh;
+  background-size: 120vh;
+  z-index: -2;
+}
+
+.container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  max-width: 92rem;
+  width: 100%;
+  margin: 2.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.6rem;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  width: 17.2rem;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  transition: color 0.5s;
+}
+
+header ul a:hover {
+  color: var(--button);
+}
+
+header button {
+  background: none;
+  color: #fff;
+  border: 1px solid var(--button);
+  cursor: pointer;
+  padding: 1.1rem 3.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 2s;
+}
+
+header button:hover {
+  background-color: var(--button);
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+main {
+  flex: 1;
+  margin: 2.5rem auto 0;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 2.5rem - 10rem);
+  overflow: hidden;
+}
+
+main .image {
+  overflow: hidden;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+main h1 {
+  text-align: center;
+  display: block;
+  font-family: var(--font-family);
+  font-size: 7rem;
+}
+
+main span {
+  text-align: center;
+  display: block;
+  font-family: var(--font-family);
+  font-size: 7rem;
+  color: var(--background);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  font-weight: 700;
+  line-height: 7rem;
+  margin-top: -0.5rem;
+}

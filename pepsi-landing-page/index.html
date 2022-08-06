@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="arquivos/styles/estilo.css">
+  <title>Pepsi Landing Page</title>
+</head>
+
+<body>
+  <section class="sec">
+    <header>
+      <a href="#"><img src="./arquivos/imagens/logo.png" class="logo"></a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">What's New</a></li>
+        <li><a href="">Newsletter</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>That's What<br /><span>I Like</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, odio sit amet pulvinar aliquet, odio
+          felis aliquet nulla, dapibus posuere lacus orci sit amet nulla. Maecenas elementum sagittis metus, sed
+          venenatis tellus suscipit eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos. Maecenas sollicitudin lobortis massa non lacinia. Donec a sodales enim. Suspendisse
+          convallis eleifend tellus, vel interdum elit porttito.</p>
+        <a href="#">View All Products</a>
+      </div>
+      <div class="imgBox"><img src="./arquivos/imagens/pepsi001.png" class="pepsi"></div>
+    </div>
+    <ul class="thumb">
+      <li><img src="./arquivos/imagens/pepsi001.png"
+          onclick="imgSlider('./arquivos/imagens/pepsi001.png');changeBgColor('#0062be')"></li>
+      <li><img src="./arquivos/imagens/pepsi002.png"
+          onclick="imgSlider('./arquivos/imagens/pepsi002.png');changeBgColor('#e60c2c')"></li>
+      <li><img src="./arquivos/imagens/pepsi003.png"
+          onclick="imgSlider('./arquivos/imagens/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="./arquivos/imagens/facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="./arquivos/imagens/twitter.png" alt=""></a></li>
+      <li><a href="#"><img src="./arquivos/imagens/instagram.png" alt=""></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgColor(color) {
+      const sec = document.querySelector('body');
+      sec.style.background = color;
+    }
+  </script>
+</body>
+
+</html>

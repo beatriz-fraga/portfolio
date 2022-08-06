@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Netflix-Sans";
+  src: url("../fonts/NetflixSans-Light.otf");
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix-Sans", Arial, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #141414;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1.4rem 3.2rem;
+}
+
+.menu-bar {
+  display: flex;
+  align-content: center;
+}
+
+header h1 a {
+  color: #f00;
+  font-size: 2.4rem;
+  margin-right: 3.2rem;
+}
+
+header ul.menu {
+  display: flex;
+  align-items: center;
+}
+
+header .menu a {
+  display: block;
+  color: #fff;
+  margin: 0.8rem;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+header .menu li.active a,
+header .menu li a:hover {
+  opacity: 1;
+}
+
+header img {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: block;
+}
+
+img.cover {
+  display: block;
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+}

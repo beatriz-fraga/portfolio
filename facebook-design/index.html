@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Facebook App</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./arquivos/styles/estilo.css"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <a href="#" class="logo"
+          ><img src="./arquivos/imagens/logo.png" alt="logo.png"
+        /></a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <a href="#" class="app"
+          ><ion-icon name="arrow-down-outline"></ion-icon>Download App</a
+        >
+      </header>
+      <div class="contentBx">
+        <div class="text">
+          <h2>Facebook</h2>
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium
+            dia nois paga. Copo furadis é disculpa de bebadis, arcu quam euismod
+            magna. Casamentiss faiz malandris se pirulitá. Vehicula non. Ut sed
+            ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+          </p>
+          <h4>Download the App</h4>
+          <a href="#" class="btn"
+            ><ion-icon name="logo-apple"></ion-icon> Apple Store</a
+          >
+          <a href="#" class="btn"
+            ><ion-icon name="logo-google-playstore"></ion-icon>Play Store</a
+          >
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="imgBx">
+          <img src="./arquivos/imagens/fb1.png" class="slides active" />
+          <img src="./arquivos/imagens/fb2.png" class="slides" />
+          <img src="./arquivos/imagens/fb3.png" class="slides" />
+          <img src="./arquivos/imagens/fb4.png" class="slides" />
+          <img src="./arquivos/imagens/fb5.png" class="slides" />
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon> </a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const slides = document.querySelectorAll('.slides');
+      const dots = document.querySelectorAll('.dot');
+
+      function SetAtive(i) {
+        for (slide of slides) slide.classList.remove('active');
+        slides[i].classList.add('active');
+        for (dot of dots) dot.classList.remove('active');
+        dots[i].classList.add('active');
+      }
+
+      for (let j = 0; j < dots.length; j++) {
+        dots[j].addEventListener('click', function () {
+          SetAtive(j);
+        });
+      }
+    </script>
+  </body>
+</html>

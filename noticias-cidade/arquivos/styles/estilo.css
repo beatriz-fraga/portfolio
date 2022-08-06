@@ -1,0 +1,287 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #fff;
+  background-image: url(../imagens/fundo.png);
+  background-repeat: repeat-x;
+}
+
+/* Área Principal */
+
+#container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+#header {
+  height: 150px;
+  background-image: url(../imagens/detalhe-topo.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-top: 25px;
+}
+
+.logo {
+  width: 152px;
+  height: 66px;
+  background: url(../imagens/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -3000px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+  list-style-type: none;
+}
+
+#header ul {
+  margin-top: 30px;
+  background-color: #b10333;
+  background: linear-gradient(to bottom, #de003e, #b10333, #69001d);
+  float: left;
+  border-radius: 8px;
+}
+
+#header ul li {
+  float: left;
+}
+
+#header ul a {
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imagens/divisor.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#header ul li:first-child a {
+  background: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+#header ul li:last-child a {
+  background: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#header a:hover {
+  color: #69001d;
+}
+
+body.home #navigationbar a#home,
+body.brasil #navigationbar a#brasil,
+body.internacional #navigationbar a#internacional,
+body.fotos #navigationbar a#fotos {
+  color: #fff;
+  background: #de003e;
+  cursor: text;
+}
+
+a:visited {
+  color: #b10333;
+}
+
+/* Conteúdo - Configuração das Três Colunas*/
+#content {
+  margin-top: 60px;
+}
+
+#first {
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+#two-columns #first {
+  width: 555px;
+}
+
+#one-column #first {
+  width: 750px;
+  margin: 0 0 20px 0px;
+}
+
+#second {
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 15px;
+}
+
+#first p,
+#second p {
+  margin-bottom: 10px;
+}
+
+#lateral {
+  width: 180px;
+  float: left;
+  margin: 0 0 20px -750px;
+}
+
+/* Caixas */
+.box {
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: #f3f3f3;
+  background-image: url(../imagens/fundo-caixa.png);
+}
+
+h2 {
+  font-size: 1.1em;
+  background-color: #294c71;
+  color: #fff;
+  padding: 5px;
+}
+
+.box-content {
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 5px;
+}
+.box-content-lateral {
+  background-color: #fff;
+  padding: 0;
+  margin-top: 5px;
+}
+#lateral ul {
+  margin-left: 0;
+}
+/* Formatação dos menus laterais */
+#lateral ul a {
+  font-size: 0.9em;
+  padding: 3px;
+  padding-left: 20px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  border-bottom: 1px solid #f3f3f3;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#lateral ul li:hover {
+  background: #f9f9f9;
+}
+#lateral ul a:hover {
+  background-image: url(../imagens/marcador.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 30px;
+  color: #a1a1a1;
+}
+
+/* Formatando formulários */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 3px;
+  font-size: 0.9em;
+  background-color: #fff;
+  border: 2px solid #a1a1a1;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  box-sizing: border-box;
+}
+
+button.submit {
+  color: #fff;
+  background: linear-gradient(to bottom, #de003e, #b10333, #69001d);
+  border: 2px solid #b70529;
+  border-radius: 3px;
+  margin: 0%;
+  margin-top: 4px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Formatação de imagens */
+img.principal-image {
+  width: 98%;
+  border: 3px solid #dfdfdf;
+}
+/* Formatando Cabeçalhos */
+h3 {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.destaque h3 {
+  background: #b10333;
+  color: #fff;
+}
+
+#first a,
+#second a {
+  color: #b10333;
+  text-decoration: none;
+}
+
+#first a:hover,
+#second a:hover {
+  color: #e50040;
+}
+
+/* Formatando lista de notícias */
+#news-list li {
+  padding: 2px;
+  border-bottom: 1px solid #ccc;
+  height: 62px;
+}
+
+#news-list li a img {
+  float: left;
+  margin: 5px;
+}
+
+#news-list li a {
+  text-decoration: none;
+}
+#news-list li a h3 {
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+#news-list li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+#news-list li a p {
+  font-size: 0.6em;
+}
+
+/* Rodapé */
+#container-footer {
+  background-color: #294c71;
+  padding: 20px;
+}
+
+#footer {
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+}
